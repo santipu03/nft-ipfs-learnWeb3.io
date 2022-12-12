@@ -26,7 +26,7 @@ export default function Home() {
       const tx = await nftContract.mint({
         // value signifies the cost of one LW3Punks which is "0.01" eth.
         // We are parsing `0.01` string to ether using the utils library from ethers.js
-        value: utils.parseEther("0.01"),
+        value: utils.parseEther("0.011"),
       });
       setLoading(true);
       // wait for the transaction to get mined
